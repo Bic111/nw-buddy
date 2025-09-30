@@ -78,7 +78,7 @@ program
       badge: NW_BADGE,
       workspace: workspace.toLowerCase(),
       branchname: BRANCH_NAME,
-      cdnUrl: CDN_URL,
+      cdnUrl: CDN_URL || 'https://cdn.nw-buddy.de',
       deployUrl: ngConfig.projects['nw-buddy'].architect.build.configurations[config].baseHref || '/',
       disableTooltips: !['live', 'ptr'].includes(workspace.toLowerCase()),
       watermarkImageUrl: NW_WATERMARK || null,

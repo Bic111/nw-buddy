@@ -3,6 +3,7 @@ import { Environment, getCharacterUrl, getModelsUrl, getNwDataUrl } from './util
 
 export const environment: Environment = {
   ...env,
+  cdnUrl: env.cdnUrl,
   production: true,
   standalone: false,
   environment: 'WEB',

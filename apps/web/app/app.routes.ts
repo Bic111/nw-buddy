@@ -13,6 +13,10 @@ const PAGE_ROUTES: Routes = [
   { path: 'ipfs', loadChildren: () => import('./pages/share').then((m) => m.ROUTES) },
 
   { path: 'items', loadChildren: () => import('./pages/database/items').then((m) => m.ROUTES) },
+  {
+    path: 'items-ext',
+    loadChildren: () => import('./pages/database/items-ext/items-ext.routes').then((m) => m.routes),
+  },
   { path: 'housing', loadChildren: () => import('./pages/database/housing').then((m) => m.ROUTES) },
   { path: 'crafting', loadChildren: () => import('./pages/database/crafting').then((m) => m.ROUTES) },
 
